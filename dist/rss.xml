@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+    <title>开源雷达</title>
+    <link>https://kaiyuanleida.com/</link>
+    <description>开源项目中文评测、全中文教程、版本记录与安全下载信息。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <item>
+      <title>Ollama 中文初评</title>
+      <link>https://kaiyuanleida.com/projects/ollama/review/</link>
+      <guid>https://kaiyuanleida.com/projects/ollama/review/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Ollama 把模型下载、运行和本地 API 封装成统一工作流，是普通用户接触本地大模型最直接的入口之一。</description>
+    </item>
+    <item>
+      <title>LocalSend 中文初评</title>
+      <link>https://kaiyuanleida.com/projects/localsend/review/</link>
+      <guid>https://kaiyuanleida.com/projects/localsend/review/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+      <description>LocalSend 让同一局域网中的设备直接发送文件和文字，不要求登录，也不需要把文件先上传到第三方服务器。</description>
+    </item>
+    <item>
+      <title>Stirling PDF 中文初评</title>
+      <link>https://kaiyuanleida.com/projects/stirling-pdf/review/</link>
+      <guid>https://kaiyuanleida.com/projects/stirling-pdf/review/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Stirling PDF 把合并、拆分、旋转、转换、OCR等PDF操作集中到浏览器界面，可在本机或自己的服务器运行。</description>
+    </item>
+    <item>
+      <title>Immich 中文初评</title>
+      <link>https://kaiyuanleida.com/projects/immich/review/</link>
+      <guid>https://kaiyuanleida.com/projects/immich/review/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Immich 提供手机照片自动备份、时间线、相册、地图、人脸与语义搜索，是自托管照片管理领域的代表项目。</description>
+    </item>
+    <item>
+      <title>AppFlowy 中文初评</title>
+      <link>https://kaiyuanleida.com/projects/appflowy/review/</link>
+      <guid>https://kaiyuanleida.com/projects/appflowy/review/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+      <description>AppFlowy 提供文档、数据库、项目与团队协作能力，定位是让用户在保留数据控制权的同时获得接近Notion的工作空间。</description>
+    </item>
+    <item>
+      <title>Penpot 中文初评</title>
+      <link>https://kaiyuanleida.com/projects/penpot/review/</link>
+      <guid>https://kaiyuanleida.com/projects/penpot/review/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Penpot 是面向产品团队的开源设计与原型平台，以SVG、CSS、HTML和JSON等开放标准连接设计师与开发者。</description>
+    </item>
+    <item>
+      <title>Jellyfin 中文初评</title>
+      <link>https://kaiyuanleida.com/projects/jellyfin/review/</link>
+      <guid>https://kaiyuanleida.com/projects/jellyfin/review/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Jellyfin 用自己的服务器整理和串流电影、剧集、音乐与照片，不要求依赖商业媒体服务器订阅。</description>
+    </item>
+    <item>
+      <title>Vaultwarden 中文初评</title>
+      <link>https://kaiyuanleida.com/projects/vaultwarden/review/</link>
+      <guid>https://kaiyuanleida.com/projects/vaultwarden/review/</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+      <description>Vaultwarden 是用Rust实现的非官方Bitwarden兼容服务端，资源占用较低，常用于个人和家庭自托管密码库。</description>
+    </item>
+  </channel></rss>

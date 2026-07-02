@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Jellyfin 用自己的服务器整理和串流电影、剧集、音乐与照片，不要求依赖商业媒体服务器订阅。">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:locale" content="zh_CN"><meta property="og:type" content="article">
+<meta property="og:site_name" content="开源雷达">
+<meta property="og:title" content="Jellyfin 使用教程｜开源雷达">
+<meta property="og:description" content="Jellyfin 用自己的服务器整理和串流电影、剧集、音乐与照片，不要求依赖商业媒体服务器订阅。">
+<meta property="og:url" content="https://kaiyuanleida.com/projects/jellyfin/tutorial/">
+<meta property="og:image" content="https://kaiyuanleida.com/assets/social-card.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jellyfin 使用教程｜开源雷达">
+<meta name="twitter:description" content="Jellyfin 用自己的服务器整理和串流电影、剧集、音乐与照片，不要求依赖商业媒体服务器订阅。">
+<link rel="canonical" href="https://kaiyuanleida.com/projects/jellyfin/tutorial/">
+<link rel="alternate" type="application/rss+xml" title="开源雷达 RSS" href="https://kaiyuanleida.com/rss.xml">
+<link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+<title>Jellyfin 使用教程｜开源雷达</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "name": "Jellyfin 使用教程｜开源雷达", "url": "https://kaiyuanleida.com/projects/jellyfin/tutorial/", "description": "Jellyfin 用自己的服务器整理和串流电影、剧集、音乐与照片，不要求依赖商业媒体服务器订阅。", "inLanguage": "zh-CN", "publisher": {"@type": "Organization", "name": "开源雷达", "url": "https://kaiyuanleida.com/"}, "dateModified": "2026-07-02", "author": {"@type": "Organization", "name": "开源雷达编辑部"}}</script>
+</head><body>
+    <header>
+      <div class="site-header shell">
+        <a class="brand" href="../../../index.html"><span class="brand-mark">O_</span><span>开源雷达</span></a>
+        <nav>
+          <a href="../../../projects/index.html">项目库</a>
+          <a href="../../../categories/index.html">分类</a>
+          <a href="../../../methodology/index.html">评测方法</a>
+          <a href="../../../about/index.html">关于</a>
+        </nav>
+        <a class="nav-action" href="../../../projects/index.html">发现项目 →</a>
+        <button class="menu" id="menuButton" aria-label="打开菜单">☰</button>
+      </div>
+      <div class="mobile-nav shell" id="mobileNav">
+        <a href="../../../projects/index.html">项目库</a>
+        <a href="../../../categories/index.html">分类</a>
+        <a href="../../../methodology/index.html">评测方法</a>
+        <a href="../../../about/index.html">关于</a>
+      </div>
+    </header><main>
+    <section class="page-hero"><div class="shell">
+      <div class="breadcrumbs"><a href="../../../index.html">首页</a> / <a href="../../../projects/index.html">项目库</a> / Jellyfin</div>
+      <div class="project-title">
+        <div class="project-icon" style="--accent:#f5d66f">JF</div>
+        <div><h1>Jellyfin</h1><p>完全自主控制的家庭影音中心</p></div>
+        <div class="score-badge"><strong>8.2</strong>综合初评</div>
+      </div>
+      <div class="tabs"><a class="" href="../../../projects/jellyfin/index.html">项目概览</a><a class="" href="../../../projects/jellyfin/review/index.html">中文评测</a><a class="active" href="../../../projects/jellyfin/tutorial/index.html">使用教程</a><a class="" href="../../../projects/jellyfin/downloads/index.html">版本下载</a></div>
+    </div></section>
+    <div class="shell content-layout"><article class="prose"><h1>Jellyfin 全中文入门教程</h1>
+<blockquote>适用版本：10.11.11。本文是首版教程草稿，正式操作前请同时核对上游文档。最后整理：2026-07-02。</blockquote>
+<h2>开始之前</h2>
+<p>拥有合法本地媒体库、NAS或家庭服务器，并愿意维护转码与客户端环境的用户。</p>
+<p>支持平台：Windows、macOS、Linux、Docker、TV、Mobile。</p>
+<h2>推荐入门流程</h2>
+<ol>
+<li>选择服务器系统对应的官方安装方式</li>
+<li>准备一份命名规范的测试媒体目录</li>
+<li>创建媒体库并选择正确的内容类型</li>
+<li>安装一个电视或手机客户端测试播放</li>
+<li>根据实际需要配置硬件转码和安全远程访问</li>
+</ol>
+<h2>第一次使用的验证标准</h2>
+<ul>
+<li>软件或服务能够正常启动。</li>
+<li>核心功能使用测试数据完成一次闭环。</li>
+<li>知道配置、数据和日志保存在哪里。</li>
+<li>知道如何备份、升级和卸载。</li>
+<li>涉及重要数据时，已经完成恢复测试。</li>
+</ul>
+<h2>常见误区</h2>
+<ul>
+<li>硬件转码配置有学习成本</li>
+<li>元数据质量与文件命名密切相关</li>
+<li>本站不会提供或引导获取侵权媒体内容</li>
+</ul>
+<h2>安全与隐私</h2>
+<p>开源不自动等于安全。安装前应确认下载来源、版本、许可证和校验值；自托管项目还需要维护 HTTPS、备份、账户权限与安全更新。</p>
+<h2>获取官方帮助</h2>
+<ul>
+<li><a href="https://github.com/jellyfin/jellyfin" rel="noopener">GitHub 项目主页</a></li>
+<li><a href="https://jellyfin.org/" rel="noopener">项目官方网站或文档</a></li>
+</ul>
+<h2>本教程还缺什么</h2>
+<p>当前版本用于验证网站内容结构。后续人工实测将补充逐步截图、具体安装命令、不同系统差异、性能数据和真实故障处理过程。</p></article>
+    <aside class="sidebar">
+      <div class="notice">当前内容为AI初评草稿，不代表已经完成全部平台实测。涉及密码、照片等重要数据时，请等待人工复核。</div>
+      <div class="side-card"><h3>项目信息</h3>
+        <div class="meta-row"><span>Star</span><b>53.3k</b></div>
+        <div class="meta-row"><span>许可证</span><b>GPL-2.0</b></div>
+        <div class="meta-row"><span>记录版本</span><b>10.11.11</b></div>
+        <div class="meta-row"><span>平台</span><b>Windows / macOS / Linux / Docker / TV / Mobile</b></div>
+        <a class="button acid" href="https://github.com/jellyfin/jellyfin" rel="noopener">访问 GitHub ↗</a>
+      </div>
+      <div class="side-card"><h3>维度评分</h3><div class="score-row"><span>上手难度</span><i style="--score:60%"></i><b>6</b></div><div class="score-row"><span>功能完整</span><i style="--score:90%"></i><b>9</b></div><div class="score-row"><span>隐私控制</span><i style="--score:90%"></i><b>9</b></div><div class="score-row"><span>维护活跃</span><i style="--score:90%"></i><b>9</b></div></div>
+    </aside></div></main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div><a class="brand" href="../../../index.html"><span class="brand-mark">O_</span><span>开源雷达</span></a>
+        <p>发现项目，真实试用，诚实评价。本站不是任何项目的官方网站。</p></div>
+        <div class="footer-links"><a href="../../../legal/index.html">法律与政策</a><a href="../../../methodology/index.html">评测方法</a><a href="../../../about/index.html">关于本站</a><span>© 2026</span></div>
+      </div>
+    </footer>
+<script src="../../../assets/site.js"></script></body></html>

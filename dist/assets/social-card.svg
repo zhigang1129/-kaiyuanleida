@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3f1e9"/>
+  <circle cx="950" cy="315" r="210" fill="none" stroke="#cbc8bc" stroke-width="3"/>
+  <circle cx="950" cy="315" r="145" fill="none" stroke="#cbc8bc" stroke-width="3"/>
+  <circle cx="950" cy="315" r="94" fill="#161913" stroke="#c7ff4a" stroke-width="18"/>
+  <circle cx="1040" cy="188" r="13" fill="#ff6b35"/>
+  <rect x="80" y="82" width="64" height="64" rx="5" fill="#161913"/>
+  <text x="112" y="124" text-anchor="middle" fill="#c7ff4a" font-family="monospace" font-weight="700" font-size="25">O_</text>
+  <text x="165" y="124" fill="#161913" font-family="sans-serif" font-size="34" font-weight="700">开源雷达</text>
+  <text x="80" y="300" fill="#161913" font-family="sans-serif" font-size="78" font-weight="800">发现开源，</text>
+  <text x="80" y="395" fill="#161913" font-family="sans-serif" font-size="78" font-weight="800">不止看 Star。</text>
+  <rect x="80" y="420" width="495" height="18" fill="#c7ff4a"/>
+  <text x="80" y="505" fill="#686b62" font-family="sans-serif" font-size="28">中文评测 · 使用教程 · 版本记录 · 安全下载</text>
+</svg>

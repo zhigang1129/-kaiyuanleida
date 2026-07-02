@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Ollama",
+    "category": "AI 工具",
+    "summary": "Ollama 把模型下载、运行和本地 API 封装成统一工作流，是普通用户接触本地大模型最直接的入口之一。",
+    "url": "projects/ollama/index.html"
+  },
+  {
+    "name": "LocalSend",
+    "category": "效率工具",
+    "summary": "LocalSend 让同一局域网中的设备直接发送文件和文字，不要求登录，也不需要把文件先上传到第三方服务器。",
+    "url": "projects/localsend/index.html"
+  },
+  {
+    "name": "Stirling PDF",
+    "category": "文档处理",
+    "summary": "Stirling PDF 把合并、拆分、旋转、转换、OCR等PDF操作集中到浏览器界面，可在本机或自己的服务器运行。",
+    "url": "projects/stirling-pdf/index.html"
+  },
+  {
+    "name": "Immich",
+    "category": "照片管理",
+    "summary": "Immich 提供手机照片自动备份、时间线、相册、地图、人脸与语义搜索，是自托管照片管理领域的代表项目。",
+    "url": "projects/immich/index.html"
+  },
+  {
+    "name": "AppFlowy",
+    "category": "知识管理",
+    "summary": "AppFlowy 提供文档、数据库、项目与团队协作能力，定位是让用户在保留数据控制权的同时获得接近Notion的工作空间。",
+    "url": "projects/appflowy/index.html"
+  },
+  {
+    "name": "Penpot",
+    "category": "设计工具",
+    "summary": "Penpot 是面向产品团队的开源设计与原型平台，以SVG、CSS、HTML和JSON等开放标准连接设计师与开发者。",
+    "url": "projects/penpot/index.html"
+  },
+  {
+    "name": "Jellyfin",
+    "category": "影音娱乐",
+    "summary": "Jellyfin 用自己的服务器整理和串流电影、剧集、音乐与照片，不要求依赖商业媒体服务器订阅。",
+    "url": "projects/jellyfin/index.html"
+  },
+  {
+    "name": "Vaultwarden",
+    "category": "安全隐私",
+    "summary": "Vaultwarden 是用Rust实现的非官方Bitwarden兼容服务端，资源占用较低，常用于个人和家庭自托管密码库。",
+    "url": "projects/vaultwarden/index.html"
+  }
+]
