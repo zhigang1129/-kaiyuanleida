@@ -177,6 +177,7 @@ def page(
     if page_type == "article":
         structured["dateModified"] = TODAY
         structured["author"] = {"@type": "Organization", "name": SITE["author"]}
+    structured_json = json.dumps(structured, ensure_ascii=False).replace("</", "<\\/")
     return f"""<!doctype html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -196,7 +197,7 @@ def page(
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
 <title>{html.escape(full_title)}</title>
 <link rel="stylesheet" href="{prefix}assets/style.css">
-<script type="application/ld+json">{json.dumps(structured, ensure_ascii=False).replace("</", "<\\/")}</script>
+<script type="application/ld+json">{structured_json}</script>
 </head><body>{header(prefix)}<main>{body}</main>{footer(prefix)}
 <script src="{prefix}assets/site.js"></script></body></html>"""
 
