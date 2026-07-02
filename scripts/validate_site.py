@@ -47,6 +47,8 @@ def main() -> None:
     for filename in required:
         if not (ROOT / filename).exists():
             errors.append(f"missing {filename}")
+    if not (ROOT.parent / "edgeone.json").exists():
+        errors.append("missing edgeone.json")
 
     if errors:
         raise SystemExit("\n".join(errors))
