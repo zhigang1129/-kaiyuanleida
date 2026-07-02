@@ -39,14 +39,13 @@ SITE_URL="https://你的域名" CONTACT_EMAIL="你的邮箱" python3 build.py
 - 输出目录：`dist`
 - 环境变量：`SITE_URL`、`CONTACT_EMAIL`
 
-每次推送到主分支后，Cloudflare Pages会自动重新构建并发布。`wrangler.toml`已经声明输出目录。
+每次推送到主分支后，EdgeOne Pages或Cloudflare Pages会自动重新构建并发布。`wrangler.toml`已经声明Cloudflare Pages输出目录。
 
-GitHub Actions会在每次提交和合并请求时自动：
+托管平台的构建设置为：
 
-1. 构建网站。
-2. 检查全部本地链接。
-3. 检查SEO描述和canonical。
-4. 检查站点地图、RSS、404和部署文件。
+1. 构建命令：`python3 build.py && python3 scripts/validate_site.py`
+2. 输出目录：`dist`
+3. 生产分支：`main`
 
 ## 内容结构
 
@@ -57,7 +56,6 @@ content/<slug>/tutorial.md  全中文教程
 static/                     样式和交互
 dist/                       构建产物
 scripts/validate_site.py    构建结果检查
-.github/workflows/          GitHub自动构建
 ```
 
 当前评测和教程由系统生成，统一标记为“AI初评、待人工复核”。完成真实安装测试后，应人工修改对应Markdown文件并更新验证状态。
