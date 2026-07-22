@@ -143,12 +143,14 @@ def header(prefix: str = "") -> str:
 
 
 def footer(prefix: str = "") -> str:
+    icp = SITE.get("icp_number", "")
+    icp_link = f'<a href="https://beian.miit.gov.cn/" rel="nofollow noopener">{html.escape(icp)}</a>' if icp else ""
     return f"""
     <footer class="site-footer">
       <div class="shell footer-grid">
         <div><a class="brand" href="{prefix}index.html"><span class="brand-mark">O_</span><span>开源雷达</span></a>
         <p>发现项目，真实试用，诚实评价。本站不是任何项目的官方网站。</p></div>
-        <div class="footer-links"><a href="{prefix}legal/index.html">法律与政策</a><a href="{prefix}methodology/index.html">评测方法</a><a href="{prefix}about/index.html">关于本站</a><span>© 2026</span></div>
+        <div class="footer-links"><a href="{prefix}legal/index.html">法律与政策</a><a href="{prefix}methodology/index.html">评测方法</a><a href="{prefix}about/index.html">关于本站</a>{icp_link}<span>© 2026</span></div>
       </div>
     </footer>"""
 
@@ -642,6 +644,10 @@ AI生成的初评会明确标注，不能替代人工测试。用户安装、部
 本站当前不要求注册账号，也不主动收集敏感个人信息。部署访问统计后，可能处理页面访问、设备类型、来源页面、粗略地区和技术错误信息，用于改进内容与性能。
 
 本站不会出售个人信息。第三方托管、统计、CDN和外部链接可能按其自身政策处理数据。正式启用任何统计或广告服务前，本页会补充服务商、Cookie及退出方式。
+
+## 网站备案
+
+本站备案号为 **{SITE.get('icp_number', '')}**，备案信息以工业和信息化部政务服务平台公示为准。
 
 ## 广告与赞助
 
